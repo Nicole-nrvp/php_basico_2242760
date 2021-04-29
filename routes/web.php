@@ -27,6 +27,8 @@ var_dump($mensaje);
 
 Route::get('arreglos', function(){
 //Arreglo: estructura de datos
+//ARREGLO DE UNA SOLA DIMESION
+//AN ES EL INDICE CLAVE
 $estudiante = [ "AN" => "Ana",
                 "MA" => "Maria",
                 "JO" => "Jorge"];
@@ -34,3 +36,46 @@ echo "<pre>";
 print_r($estudiante);
 echo "<pre>";
 });
+
+//ARREGLO DOS DIMENSIONES
+Route::get('paises', function(){
+    //arrego primera dimesion
+    $paises = [ "Colombia" => [
+        //arreglos segunda dimesion
+                "capital" => "Bogotá",
+                "moneda" => "Peso",
+                "poblacion" => 50.34
+    ],
+              "Peru" => [
+                "capital" => "Lima",
+                "moneda" => "Sol",
+                "poblacion" => 32.51
+              ],
+              "Paraguay" => [
+                "capital" => "Asunción",
+                "moneda" => "Guaraní paraguayo",
+                "poblacion" => 7
+              ]
+            ];
+//para recorrer un arreglo foreach
+//foreach($paises as  $pais ){
+
+//para recorrer un error con el nombre de lad primeras dimensiones
+            foreach($paises as $nombrepais => $pais ){
+            echo "<h1>$nombrepais</h1>";
+            echo "<pre>";
+//Imprimir solo datos de dimesion uno y dos(datos en concreto)
+//print_r($paises["Colombia"]["moneda"]);
+
+//Imprimir solo la capital utilizando el foreach
+            echo ($pais["capital"]);
+            echo "<pre>";
+            echo ($pais["moneda"]);
+            echo "<pre>";
+            echo ($pais["poblacion"]);
+            echo "<pre>";
+            echo "<hr />";
+            }
+        });
+
+//SALTO DE LINEA echo ($pais["moneda"]);
