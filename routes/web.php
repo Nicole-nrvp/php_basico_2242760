@@ -57,25 +57,30 @@ Route::get('paises', function(){
                 "poblacion" => 7
               ]
             ];
+
+            //INVOCAR VISTA
+            return view("paisesn")->with("naciones" , $paises );
+
 //para recorrer un arreglo foreach
 //foreach($paises as  $pais ){
 
 //para recorrer un error con el nombre de lad primeras dimensiones
-            foreach($paises as $nombrepais => $pais ){
-            echo "<h1>$nombrepais</h1>";
-            echo "<pre>";
+           // foreach($paises as $nombrepais => $pais ):
+            //echo "<h1>$nombrepais</h1>";
+            //echo "<pre>";
 //Imprimir solo datos de dimesion uno y dos(datos en concreto)
 //print_r($paises["Colombia"]["moneda"]);
 
 //Imprimir solo la capital utilizando el foreach
-            echo ($pais["capital"]);
-            echo "<pre>";
-            echo ($pais["moneda"]);
-            echo "<pre>";
-            echo ($pais["poblacion"]);
-            echo "<pre>";
-            echo "<hr />";
-            }
+            //echo ($pais["capital"]);
+            //echo "<pre>";
+            //echo ($pais["moneda"]);
+            //echo "<pre>";
+            //echo ($pais["poblacion"]);
+            //echo "<pre>";
+            //echo "<hr />";
+            //endforeach;
+
         });
 
 //SALTO DE LINEA echo ($pais["moneda"]);
