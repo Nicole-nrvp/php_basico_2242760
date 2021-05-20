@@ -84,3 +84,6 @@ Route::get('paises', function(){
         });
 
 //SALTO DE LINEA echo ($pais["moneda"]);
+Route::get('formulario_buscador', "MetabucadorController@formulario_buscador");
+
+Route::post('buscar', "MetabucadorController@buscar");
