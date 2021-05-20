@@ -35,7 +35,7 @@ class MetabucadorController extends Controller
                 break;
             case 8: return redirect()-> to("https://duckduckgo.com/?q=$termino");
                 break;
-            case 9: return redirect()-> to("https://www.amazon.com/s?k=$termino");
+            case 9: return redirect()-> to("https://www.findx.com/search?q=$termino");
                 break;
             case 10: return redirect()-> to("https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=$termino");
                 break;

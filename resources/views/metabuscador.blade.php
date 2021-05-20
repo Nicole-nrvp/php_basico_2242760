@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.css" integrity="sha512-mG7Xo6XLlQ13JGPQLgLxI7bz8QlErrsE9rYQDRgF+6AlQHm9Tn5bh/vaIKxBmM9mULPC6yizAhEmKyGgNHCIvg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./estilo.css">
 </head>
-<body>
+<body style="background-color: rgb(189, 245, 116)">
 
     <form class="form-horizontal"
     method="POST" action="{{ url ("buscar") }}"
@@ -18,8 +18,9 @@
         <fieldset>
 
         <!-- Form Name -->
-        <legend><center><h1 style="color: rgb(110, 250, 98)">Búsqueda en varios motores</h1></center></legend>
-
+        <legend><center><h1 style="color: rgb(8, 8, 8)">Búsqueda en varios motores</h1></center></legend>
+            <br>
+            <br>
         <!-- Text input-->
         <div class="form-group">
           <label class="col-md-4 control-label" for="Ingrese el término de búsqueda ">1. Ingrese el término de búsqueda </label>
@@ -28,6 +29,7 @@
 
           </div>
         </div>
+        <br>
 
         <!-- Multiple Radios -->
         <div class="form-group">
@@ -84,7 +86,7 @@
           <div class="radio">
             <label for="motores-8">
               <input type="radio" name="motores" id="motores-8" value="9">
-              Amazon
+              Findx
             </label>
             </div>
           <div class="radio">
