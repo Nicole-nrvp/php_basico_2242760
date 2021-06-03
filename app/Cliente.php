@@ -4,12 +4,14 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Artist extends Model
+class Cliente extends Model
 {
     //vincular modelo a tabla
-    protected $table="artist";
+    protected $table="customer";
     //Establecer la clave primaria para la entidad (por defcto: id)
-    protected $primaryKey = "ArtistId";
+    protected $primaryKey = "CustomerId";
     //omitir campos
     public $timestamps = false;
 }
+
+
